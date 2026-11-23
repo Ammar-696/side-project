@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#282020" />
+  <meta name="description" content="CONFIDENTIAL: An extraordinarily suspicious birthday case concerning Amna." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Curious Case of Amna 🔎" />
+  <meta property="og:description" content="A classified birthday investigation. Your presence is required, Agent Amna." />
+  <meta property="og:image" content="/assets/og-card.svg" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght,SOFT,WONK@9..144,500,0,0;9..144,600,0,0;9..144,700,0,0&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <title>The Curious Case of Amna — Classified Birthday File</title>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"><span class="ambient-icon a1">✳</span><span class="ambient-icon a2">✧</span><span class="ambient-icon a3">✳</span></div>
+  <div class="app" id="app">
+    <header class="app-header" aria-label="Investigation controls">
+      <div class="agency-mark" aria-label="Birthday Investigation Bureau">
+        <div class="agency-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m7 10.5 2.2 2.1 4-4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><strong>B.I.B.</strong><small>BIRTHDAY INVESTIGATION BUREAU</small></div>
+      </div>
+      <button type="button" class="sound-toggle" id="soundToggle" aria-pressed="false" aria-label="Turn sound effects on" title="Sound effects are off">
+        <svg class="sound-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-cross" d="m16 9 5 6m0-6-5 6"/><path class="sound-waves" d="M15 9a4 4 0 0 1 0 6M18 6a8 8 0 0 1 0 12"/></svg>
+        <span id="soundText">SOUND OFF</span>
+      </button>
+    </header>
+    <div class="progress-wrap" aria-label="Investigation progress"><div class="progress-track" id="progressTrack" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progress"><span id="progressFill"></span></div><span class="progress-label" id="progressLabel">FILE SEALED</span></div>
+
+    <main id="main">
+      <!-- 00: OPENING -->
+      <section class="scene active" id="scene-intro" aria-labelledby="introTitle">
+        <div class="scene-topline"><span>FILE № BDAY–001</span><span class="topline-right"><span class="tiny-dot"></span> STRICTLY CONFIDENTIAL</span></div>
+        <div class="intro-art" aria-hidden="true">
+          <div class="circle-seal"><div class="seal-ring"><svg viewBox="0 0 160 160" fill="none"><circle cx="80" cy="80" r="74" stroke="currentColor" stroke-width="1" stroke-dasharray="4 5"/><circle cx="80" cy="80" r="57" stroke="currentColor" stroke-width="1.5"/><path d="m54 92 18 18 35-41" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M49 51h61" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M56 42h47" stroke="currentColor" stroke-width="1" stroke-linecap="round"/><path d="M67 30h27" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg><span>EST. A VERY IMPORTANT DAY</span></div></div>
+          <div class="rubber-stamp">TOP SECRET<br><small>DO NOT IGNORE</small></div>
+          <div class="paper-clip clip-1"></div>
+          <div class="star-mark">✳</div>
+        </div>
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="red-line"></span> OFFICIAL INVESTIGATION NOTICE</p>
+          <h1 id="introTitle">The Curious<br>Case of <em>Amna.</em></h1>
+          <p class="intro-lead">Something highly suspicious is happening. And all the evidence points to <strong>you.</strong></p>
+          <div class="classified-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 9v5m0 3h.01" stroke-linecap="round"/></svg><span>REPORT: Suspect caught having <strong>another birthday</strong> without official permission.</span></div>
+        </div>
+        <div class="scene-actions"><button class="btn btn-primary" type="button" data-go="suspect">OPEN CASE FILE <span aria-hidden="true">↗</span></button><p class="action-hint">No actual crimes were committed. Probably.</p></div>
+        <div class="document-footer"><span>DEPARTMENT OF VERY SERIOUS MATTERS</span><span>01 / 07</span></div>
+      </section>
+
+      <!-- 01: PROFILE -->
+      <section class="scene" id="scene-suspect" aria-labelledby="suspectTitle" hidden>
+        <div class="scene-topline"><button type="button" class="text-back" data-go="intro">← BACK</button><span>PERSON OF INTEREST • 01</span></div>
+        <p class="eyebrow"><span class="red-line"></span> SUSPECT IDENTIFICATION</p>
+        <h2 id="suspectTitle">We found <em>her.</em></h2>
+        <p class="section-subtitle">After an intensive 0.3-second investigation, we have identified our prime suspect.</p>
+        <div class="wanted-poster">
+          <div class="poster-header"><span>OFFICIAL NOTICE</span><span>REF: 001–A</span></div>
+          <div class="wanted-title">WANTED</div>
+          <div class="illustration-frame">
+            <svg viewBox="0 0 270 200" role="img" aria-label="Illustrated anonymous silhouette with a playful bow; no personal photo" class="silhouette-svg"><defs><pattern id="sketch-dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#bcab90" opacity=".45"/></pattern></defs><rect width="270" height="200" fill="url(#sketch-dots)"/><circle cx="135" cy="92" r="72" stroke="#d6c4a7" stroke-width="1.5" stroke-dasharray="3 6" fill="none"/><path d="M50 200c4-48 34-71 85-71s81 23 85 71" fill="#54413b"/><path d="M93 95c-15-11-20-51 1-72 22-22 64-20 83 7 12 16 12 48-2 68l-12 21h-58L93 95Z" fill="#3b302f"/><ellipse cx="135" cy="78" rx="36" ry="42" fill="#d7ae92"/><path d="M97 64c6-32 22-45 47-43 24 1 35 19 31 45-18-5-30-16-35-25-6 12-20 21-43 23Z" fill="#3b302f"/><path d="M100 93c-5 23-7 40-28 44 17 10 36 8 46-8M171 91c5 24 8 36 27 45-15 7-36 7-47-5" fill="#3b302f"/><path d="M120 83h6m19 0h6" stroke="#58403b" stroke-width="2" stroke-linecap="round"/><path d="M131 100q5 3 10 0" stroke="#985d5c" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M179 30q-10-17-21-9l-7 10 15 13 13-14Z" fill="#a2474c"/><path d="M180 30q12-17 23-10l-2 17-21 6-1-13Z" fill="#a2474c"/><ellipse cx="179" cy="32" rx="7" ry="7" fill="#b85c60"/><path d="M114 135q21 18 42 0" fill="none" stroke="#d9b4a2" stroke-width="5"/></svg>
+            <span class="mugshot-overlay">IDENTITY: NOT SO SECRET</span>
+          </div>
+          <div class="poster-suspect">AMNA</div>
+          <p class="poster-caption">FOR BEING SUSPICIOUSLY WONDERFUL</p>
+          <div class="poster-bottom"><span>DO NOT PANIC</span><span>OFFER CAKE INSTEAD</span></div>
+          <span class="stamp-identified">IDENTIFIED ✓</span>
+        </div>
+        <div class="data-grid"><div><small>CODE NAME</small><strong>Agent Amna</strong></div><div><small>THREAT LEVEL</small><strong>Mostly adorable</strong></div><div><small>AGE</small><strong>Classified 🔒</strong></div><div><small>KNOWN WEAKNESS</small><strong>Birthday cake</strong></div></div>
+        <div class="scan-box"><div class="scan-instructions"><strong>Identity verification required</strong><small>Press and hold the fingerprint to continue.</small></div><button type="button" class="fingerprint-btn" id="fingerprintBtn" aria-label="Press and hold to scan fingerprint"><span class="fingerprint-progress"></span><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><path d="M19 29c1-15 12-23 23-23 13 0 22 9 23 24M14 39c-1-18 10-29 27-29 17 0 26 12 26 29M26 31c1-11 7-15 15-15 10 0 16 7 16 20 0 11-1 19-5 32M32 67c5-12 7-21 7-30 0-7 6-7 6 0 0 17-3 25-7 36M24 39c0-22 32-24 32 0M17 48c2 9 1 17-2 22M28 46c1 10-1 19-5 27M48 46c0 12-2 21-6 29M61 43c-1 11-1 22-6 30"/></svg></button><p class="scan-status" id="scanStatus" aria-live="polite">WAITING FOR FINGERPRINT...</p><button class="skip-link" type="button" data-go="charges">Skip verification →</button></div>
+        <div class="document-footer"><span>EYES ONLY • B.I.B.</span><span>02 / 07</span></div>
+      </section>
+
+      <!-- 02: CHARGES -->
+      <section class="scene" id="scene-charges" aria-labelledby="chargesTitle" hidden>
+        <div class="scene-topline"><button type="button" class="text-back" data-go="suspect">← BACK</button><span>CRIMINAL RECORD • 02</span></div>
+        <p class="eyebrow"><span class="red-line"></span> OFFICIAL ALLEGATIONS</p>
+        <h2 id="chargesTitle">The charges <em>against you.</em></h2>
+        <p class="section-subtitle">We regret to inform you that the following accusations are extremely unserious.</p>
+        <div class="charge-counter"><span id="chargeCount">CHARGE 01 OF 04</span><span>SWIPE OR TAP →</span></div>
+        <div class="charge-card" id="chargeCard" tabindex="0" aria-live="polite"><div class="charge-inner"><div class="charge-icon" id="chargeIcon" aria-hidden="true">🎂</div><span class="charge-tag">SECTION 001 • BIRTHDAY LAW</span><h3 id="chargeTitle">Unauthorized<br>Leveling Up</h3><p id="chargeDescription">Suspect has grown another year older without submitting the required paperwork.</p><div class="sentence"><span>PROPOSED SENTENCE</span><strong id="chargeSentence">One extra slice of cake.</strong></div><span class="charge-stamp">GUILTY?</span></div></div>
+        <div class="charge-pagination" role="group" aria-label="Charges"><button type="button" id="chargePrev" class="charge-arrow" aria-label="Previous charge">←</button><div class="charge-dots" id="chargeDots" aria-label="Charge position"></div><button type="button" id="chargeNext" class="charge-arrow" aria-label="Next charge">→</button></div>
+        <div class="scene-actions"><button type="button" class="btn btn-primary" data-go="evidence">EXAMINE THE EVIDENCE <span aria-hidden="true">↗</span></button></div>
+        <div class="document-footer"><span>ALL CHARGES ARE ENTIRELY MADE UP</span><span>03 / 07</span></div>
+      </section>
+
+      <!-- 03: EVIDENCE -->
+      <section class="scene" id="scene-evidence" aria-labelledby="evidenceTitle" hidden>
+        <div class="scene-topline"><button type="button" class="text-back" data-go="charges">← BACK</button><span>EVIDENCE ARCHIVE • 03</span></div>
+        <p class="eyebrow"><span class="red-line"></span> CLASSIFIED MATERIAL</p>
+        <h2 id="evidenceTitle">The evidence <em>doesn't lie.</em></h2>
+        <p class="section-subtitle">Tap each sealed exhibit to find out what our highly qualified detectives discovered.</p>
+        <div class="evidence-summary"><span>ARCHIVED EXHIBITS</span><strong id="evidenceCount">0 / 4 OPENED</strong></div>
+        <div class="evidence-grid" id="evidenceGrid">
+          <button type="button" class="evidence-card" data-evidence="0" aria-expanded="false"><span class="evidence-top"><span>EXHIBIT A</span><span>↗</span></span><span class="evidence-icon">✉</span><strong>Witness Statement</strong><small class="evidence-teaser">TAP TO DECLASSIFY</small><span class="evidence-reveal">"Ordinary days somehow become 10× more fun when Amna is around."</span><span class="evidence-seal">SEALED</span></button>
+          <button type="button" class="evidence-card" data-evidence="1" aria-expanded="false"><span class="evidence-top"><span>EXHIBIT B</span><span>↗</span></span><span class="evidence-icon">♛</span><strong>Royal Behavior</strong><small class="evidence-teaser">TAP TO DECLASSIFY</small><span class="evidence-reveal">Suspect occasionally behaves like the main character. Investigation confirms: fair enough.</span><span class="evidence-seal">SEALED</span></button>
+          <button type="button" class="evidence-card" data-evidence="2" aria-expanded="false"><span class="evidence-top"><span>EXHIBIT C</span><span>↗</span></span><span class="evidence-icon">◷</span><strong>Cake Forecast</strong><small class="evidence-teaser">TAP TO DECLASSIFY</small><span class="evidence-reveal">There is a 99.9% chance of cake disappearing tonight. Amna is our prime suspect.</span><span class="evidence-seal">SEALED</span></button>
+          <button type="button" class="evidence-card" data-evidence="3" aria-expanded="false"><span class="evidence-top"><span>EXHIBIT D</span><span>↗</span></span><span class="evidence-icon">✳</span><strong>Official Findings</strong><small class="evidence-teaser">TAP TO DECLASSIFY</small><span class="evidence-reveal">The suspect is responsible for a suspicious number of smiles. No further action recommended.</span><span class="evidence-seal">SEALED</span></button>
+        </div>
+        <div class="investigator-note"><span>✎</span><p>Detective's note: The evidence is overwhelming. And a little bit cute.</p></div>
+        <div class="scene-actions"><button type="button" class="btn btn-primary" data-go="interrogation">BEGIN INTERROGATION <span aria-hidden="true">↗</span></button></div>
+        <div class="document-footer"><span>HANDLE WITH EXTREME CURIOSITY</span><span>04 / 07</span></div>
+      </section>
+
+      <!-- 04: INTERROGATION -->
+      <section class="scene" id="scene-interrogation" aria-labelledby="interrogationTitle" hidden>
+        <div class="scene-topline"><button type="button" class="text-back" data-go="evidence">← BACK</button><span>INTERVIEW ROOM • 04</span></div>
+        <p class="eyebrow"><span class="red-line"></span> ON THE RECORD</p>
+        <h2 id="interrogationTitle">Just a few <em>questions.</em></h2>
+        <p class="section-subtitle">Don't worry. You are absolutely allowed to ask for a lawyer. They are currently eating cake.</p>
+        <div class="interview-progress"><span>INTERROGATION IN PROGRESS</span><span id="questionCounter">01 / 03</span></div>
+        <div class="interview-file"><div class="interview-symbol" aria-hidden="true">?</div><span class="interview-label">QUESTION ON RECORD</span><h3 id="interviewQuestion">Do you acknowledge that another birthday has occurred?</h3><div id="answerOptions" class="answer-options"></div><div id="detectiveResponse" class="detective-response" hidden><div class="detective-avatar" aria-hidden="true">⌕</div><div><small>DETECTIVE'S RESPONSE</small><p id="detectiveText"></p></div></div></div>
+        <div class="scene-actions"><button type="button" class="btn btn-primary" id="interviewNext" disabled>SELECT YOUR ANSWER FIRST <span aria-hidden="true">↗</span></button></div>
+        <p class="interview-disclaimer">Every answer is legally binding in the imaginary Birthday Court.</p>
+        <div class="document-footer"><span>TRANSCRIPT IS TOTALLY LEGIT</span><span>05 / 07</span></div>
+      </section>
+
+      <!-- 05: VERDICT -->
+      <section class="scene" id="scene-verdict" aria-labelledby="verdictTitle" hidden>
+        <div class="scene-topline"><button type="button" class="text-back" data-go="interrogation">← BACK</button><span>CASE DECISION • 05</span></div>
+        <p class="eyebrow"><span class="red-line"></span> THE COURT HAS DECIDED</p>
+        <div class="verdict-content"><div class="court-icon" aria-hidden="true">⚖</div><h2 id="verdictTitle">The final <em>verdict.</em></h2><p class="section-subtitle">After a very serious investigation, three imaginary hearings, and one coffee break...</p><div class="verdict-paper"><div class="verdict-stripe">OFFICIAL BIRTHDAY COURT • FINAL ORDER</div><span class="verdict-suspect">IN THE MATTER OF: AMNA</span><div class="verdict-seal">GUILTY</div><p class="verdict-reason">...of making life a little brighter just by being in it.</p><span class="verdict-underlined">CHARGES: 100% WHOLESOME</span><div class="verdict-signature"><span>Signed,</span><strong>The Birthday Court</strong><small>very unbiased, definitely</small></div></div></div>
+        <div class="scene-actions"><button type="button" class="btn btn-primary" data-go="birthday">REVEAL YOUR SENTENCE <span aria-hidden="true">↗</span></button></div>
+        <div class="document-footer"><span>CASE STATUS: READY TO CLOSE</span><span>06 / 07</span></div>
+      </section>
+
+      <!-- 06: BIRTHDAY -->
+      <section class="scene birthday-scene" id="scene-birthday" aria-labelledby="birthdayTitle" hidden>
+        <div class="scene-topline"><span>CASE № BDAY–001</span><span>FINAL REVELATION ♡</span></div>
+        <div class="birthday-overline">✧ INVESTIGATION COMPLETE ✧</div>
+        <div class="birthday-hero"><div class="birthday-spark one">✷</div><div class="birthday-spark two">✦</div><div class="birthday-spark three">✧</div><div class="cake-illustration" aria-hidden="true"><svg viewBox="0 0 240 180" fill="none"><ellipse cx="120" cy="155" rx="85" ry="13" fill="#dfbdb3"/><path d="M69 103h102v45c-19 12-83 15-102-1v-44Z" fill="#ba6466"/><path d="M69 103c7-15 89-17 102 0v15c-6 13-14-4-22 7s-15-2-24-1c-14 5-17-9-28 0-9 9-15-6-28-6v-15Z" fill="#ffe7d7"/><ellipse cx="120" cy="102" rx="51" ry="13" fill="#ffede0"/><path d="M92 67v31m28-37v37m28-31v31" stroke="#f9c0b6" stroke-width="8" stroke-linecap="round"/><path d="M92 53c-9 6-8 14 0 15 10-1 9-9 0-15Zm28-8c-10 8-10 16 0 17 10-2 9-10 0-17Zm28 8c-9 6-8 14 0 15 10-1 9-9 0-15Z" fill="#e5a64f"/><path d="M91 49c0 3 1 5 1 5m28-12c0 3 1 5 1 5m27 2c0 3 1 5 1 5" stroke="#f5d084" stroke-width="2" stroke-linecap="round"/><path d="M83 136c15 9 56 13 78 0" stroke="#dfa0a0" stroke-width="2" stroke-dasharray="3 5"/><path d="M45 69v11m-5-5h10M185 49v13m-6-6h12M195 99v10m-5-5h10" stroke="#b85e61" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+        <h2 id="birthdayTitle">Happy Birthday,<br><em>Amna!</em> <span class="birthday-heart">♡</span></h2>
+        <p class="birthday-tagline">Okay, enough with the detective act.</p>
+        <p class="birthday-intro">The real reason you're here is pretty simple: <strong>you deserve to feel celebrated today.</strong></p>
+        <button class="envelope" id="envelopeButton" type="button" aria-expanded="false" aria-controls="birthdayLetter"><div class="envelope-flap"></div><span class="envelope-seal">♡</span><span class="envelope-caption">TAP TO OPEN YOUR LETTER</span></button>
+        <div class="birthday-letter" id="birthdayLetter" hidden><p class="letter-salutation">Dear Amna,</p><p>Behind all the fake charges and dramatic investigations, here's the actual truth: <strong>you're a genuinely wonderful friend.</strong></p><p>You make ordinary moments more fun, and I hope this new chapter brings you plenty of laughs, little adventures, good surprises, and the kind of happiness that sticks around.</p><p>Keep being your lovely, slightly suspicious self. The world could always use more people like you. 💗</p><p class="letter-closing">Have the happiest birthday!<br><strong>— Your extremely unbiased detective ♡</strong></p></div>
+        <div class="birthday-sentence"><span>YOUR OFFICIAL SENTENCE</span><p>365 days of happiness, unlimited laughter, and first dibs on cake. 🎂</p></div>
+        <div class="birthday-footer-actions"><button type="button" class="btn btn-outline" id="replayButton">↺ REPLAY THE CASE</button><button type="button" class="share-btn" id="shareButton"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg> SHARE CASE</button></div>
+        <div class="case-closed">CASE CLOSED <span>✳</span> FRIENDSHIP ONGOING</div>
+        <div class="document-footer"><span>WITH LOVE, THE BIRTHDAY BUREAU</span><span>07 / 07</span></div>
+      </section>
+    </main>
+  </div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
